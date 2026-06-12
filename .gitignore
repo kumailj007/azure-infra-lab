@@ -1,0 +1,13 @@
+# Never commit secrets or keys
+*.pem
+*.key
+*_rsa
+*_ed25519
+*.pub
+.env
+*.env
+
+# Local Azure CLI / Bicep build artifacts
+*.json.bak
+main.json
+.azure/
