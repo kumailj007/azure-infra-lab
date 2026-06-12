@@ -1,0 +1,22 @@
+#cloud-config
+package_update: true
+packages:
+  - nginx
+write_files:
+  - path: /var/www/html/index.html
+    content: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>AZ-104 Infrastructure Lab</title>
+      </head>
+      <body style="font-family: system-ui, sans-serif; text-align: center; padding-top: 80px; background: #0b1220; color: #e8eefc;">
+        <h1>AZ-104 Infrastructure Lab</h1>
+        <p>Web-tier VM provisioned with Bicep, sitting behind an NSG that only allows HTTP from the internet and SSH from my IP.</p>
+        <p style="opacity:0.6;">Infrastructure as Code &middot; Azure Administrator</p>
+      </body>
+      </html>
+runcmd:
+  - systemctl enable nginx
+  - systemctl restart nginx
