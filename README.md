@@ -2,7 +2,7 @@
 
 Infrastructure-as-Code (Bicep) that defines a segmented, secured two-tier Azure environment. Written to demonstrate AZ-104 Azure Administrator skills through clean, modular IaC.
 
-> **Cert link:** Backs my **AZ-104 (Azure Administrator Associate)** knowledge — the Bicep implements the core admin domains (networking, compute, storage, identity, governance) as working, deployable templates.
+Backs my **AZ-104 (Azure Administrator Associate)** knowledge — the Bicep implements the core admin domains (networking, compute, storage, identity, governance) as working, deployable templates.
 
 ---
 
