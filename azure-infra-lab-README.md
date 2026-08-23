@@ -2,7 +2,7 @@
 
 Infrastructure-as-Code (Bicep) that defines a segmented, secured two-tier Azure environment. Written to demonstrate AZ-104 Azure Administrator skills through clean, modular IaC.
 
-Backs my **AZ-104 (Azure Administrator Associate)** knowledge — the Bicep implements the core admin domains (networking, compute, storage, identity, governance) as working, deployable templates.
+> **Cert link:** Backs my **AZ-104 (Azure Administrator Associate)** knowledge — the Bicep implements the core admin domains (networking, compute, storage, identity, governance) as working, deployable templates.
 
 ---
 
@@ -39,11 +39,11 @@ All defined in modular Bicep, deployable with a single script.
 
 | AZ-104 domain | Implemented by |
 |---|---|
-| Identity & governance | RBAC role assignment at RG scope, resource lock, tagging strategy |
+| Identity & governance | Consistent resource tagging across every resource (RBAC assignment + resource lock are done via CLI — see [LAB-GUIDE.md](LAB-GUIDE.md) §4a–4b) |
 | Storage | Secure StorageV2 account, private container, TLS/HTTPS enforcement |
 | Compute | Ubuntu VM, managed disk, SSH-key auth, cloud-init provisioning |
 | Virtual networking | VNet, subnetting, NSGs, least-privilege rules, public IP |
-| Monitoring | Metric alert on VM CPU |
+| Monitoring | VM CPU metric alert, created via CLI — see [LAB-GUIDE.md](LAB-GUIDE.md) §4c |
 | IaC & tooling | Modular Bicep, `az bicep build` validation, CLI deployment |
 
 ---
