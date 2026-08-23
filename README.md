@@ -1,4 +1,4 @@
-# Azure Infrastructure-as-Code — AZ-104 (Bicep)
+# Azure Infrastructure-as-Code — (Bicep)
 
 Infrastructure-as-Code (Bicep) that defines a segmented, secured two-tier Azure environment. Written to demonstrate AZ-104 Azure Administrator skills through clean, modular IaC.
 
